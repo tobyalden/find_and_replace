@@ -1,12 +1,12 @@
+body {
+    background-image: url("http://headspacepress.com/wp-content/uploads/2014/07/shutterstock_1117213-words.jpg");
+    background-size: cover;
+}
+
 #result {
   display: none;
 }
 
 .panel {
   display: none;
-}
-
-img {
-  max-width: 100%;
-  margin-top: -30px;
 }
