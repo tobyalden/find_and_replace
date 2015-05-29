@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Pig Latin Translator</title>
+    <title>Find & Replace</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css">
        <link rel="stylesheet" href="./css/styles.css" type="text/css">
        <script src="js/jquery-1.11.3.js"></script>
@@ -9,21 +9,27 @@
   <body>
     <div class="jumbotron">
       <div class="container">
-        <h1>Pig Latin</h1>
-        <p class="lead">Pig Latin is a language game in which words in English are altered. The objective is to conceal the meaning of the words from others not familiar with the rules.<br></p>
-        <form id="piglatin">
+        <h1>Find & Replace</h1>
+        <p class="lead">Insert a phrase to search through, a word to find, and a word to replace it with.<br></p>
+        <form id="find-and-replace">
           <div class="form-group">
-              <label for="input-string"><b>Insert a Message:</b></label>
-              <input id="input-string" type="text">
+              <label for="input-phrase"><b>Phrase:</b></label>
+              <input id="input-phrase" type="text">
+              <label for="input-find"><b>Find:</b></label>
+              <input id="input-find" type="text">
+              <label for="input-replace"><b>Replace:</b></label>
+              <input id="input-replace" type="text">
+              <input id="match-case" type="checkbox">  Match Case<br>
           </div>
           <div id="result">
-            <div class="alert alert-info"><p><b>Pig Latin Translation:</b> <em><span class="output"></span></em> </p></div>
+            <div class="alert alert-info"><p><b>Result:</b> <em><span class="output"></span></em> </p></div>
           </div>
           <button type="submit" class="btn btn-lg btn-primary">Submit</button>
         </div>
       </form>
     </div>
-    <div id="pigbanner">
-    <img class="center-block" src="http://www.clonesafety.org/imagelibrary/photos/master/pigs1.jpg"></div>
+    <div id="banner">
+      <img class="center-block" src="http://headspacepress.com/wp-content/uploads/2014/07/shutterstock_1117213-words.jpg">
+    </div>
   </body>
 </html>
